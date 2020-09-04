@@ -91,27 +91,27 @@ public class MQAdminExtImpl implements MQAdminExt {
         MQAdminInstance.threadLocalMQAdminExt().createAndUpdateTopicConfig(addr, config);
     }
 
-    @Override public void createAndUpdatePlainAccessConfig(String addr,
+    public void createAndUpdatePlainAccessConfig(String addr,
         PlainAccessConfig plainAccessConfig) throws RemotingException, MQBrokerException, InterruptedException, MQClientException {
         
     }
 
-    @Override public void deletePlainAccessConfig(String addr,
+    public void deletePlainAccessConfig(String addr,
         String accessKey) throws RemotingException, MQBrokerException, InterruptedException, MQClientException {
 
     }
 
-    @Override public void updateGlobalWhiteAddrConfig(String addr,
+    public void updateGlobalWhiteAddrConfig(String addr,
         String globalWhiteAddrs) throws RemotingException, MQBrokerException, InterruptedException, MQClientException {
 
     }
 
-    @Override public ClusterAclVersionInfo examineBrokerClusterAclVersionInfo(
+    public ClusterAclVersionInfo examineBrokerClusterAclVersionInfo(
         String addr) throws RemotingException, MQBrokerException, InterruptedException, MQClientException {
         return null;
     }
 
-    @Override public AclConfig examineBrokerClusterAclConfig(
+    public AclConfig examineBrokerClusterAclConfig(
         String addr) throws RemotingException, MQBrokerException, InterruptedException, MQClientException {
         return null;
     }
@@ -534,12 +534,12 @@ public class MQAdminExtImpl implements MQAdminExt {
         return null;
     }
 
-    @Override public boolean resumeCheckHalfMessage(
+    public boolean resumeCheckHalfMessage(
         String msgId) throws RemotingException, MQClientException, InterruptedException, MQBrokerException {
         return false;
     }
 
-    @Override public boolean resumeCheckHalfMessage(String topic,
+    public boolean resumeCheckHalfMessage(String topic,
         String msgId) throws RemotingException, MQClientException, InterruptedException, MQBrokerException {
         return false;
     }
